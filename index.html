@@ -1,0 +1,37 @@
+<style>
+    button{
+        background: #09f;
+        color: #fff;
+        border: 0;
+        padding: 4px 8px;
+        font-size: 18px;
+    }
+
+    body{
+        background: #222;
+    }
+
+</style>
+
+
+<button data-id="123">Me gusta</button>
+
+<script>
+    const button = document.querySelector('button')
+
+    button.addEventListener('click', function (){
+
+        const id = button.getAttribute('data-id')
+
+        if(button.classList.contains('liked')){
+            button.classList.remove('liked')
+            button.innerText = 'Me gusta'
+        }
+        else{
+            button.classList.add('liked')
+            button.innerText = 'Quitar Me gusta'
+        }
+
+    })
+
+</script>
