@@ -9,21 +9,18 @@ export function App (){
         <div className='App'>
             <TwitterFollowCard 
                 formatUserName={formatUserName} 
-                isFollowing 
                 name="José López" 
                 userName="midudev"
             />
 
             <TwitterFollowCard 
                 formatUserName={formatUserName} 
-                isFollowing 
                 name="Dilan Peña" 
                 userName="pheralb"
             />
 
             <TwitterFollowCard 
-                formatUserName={formatUserName} 
-                isFollowing={false} 
+                formatUserName={formatUserName}  
                 name="Amén" 
                 userName="elonmusk"
             />
